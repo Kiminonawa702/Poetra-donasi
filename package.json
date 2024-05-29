@@ -1,0 +1,40 @@
+{
+  "name": "auto-read-sw",
+  "version": "0.78.343",
+  "description": "males bjir dah lomssj",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bolaxd/bot-read-sw.git"
+  },
+  "keywords": [
+    "bot",
+    "read-sw",
+    "whatsapp-bot",
+    "bot-nodejs",
+    "nodejs"
+  ],
+  "author": "kome",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bolaxd/bot-read-sw/issues"
+  },
+  "homepage": "https://github.com/bolaxd/bot-read-sw#readme",
+  "dependencies": {
+    "@adiwajshing/keyed-db": "^0.2.4",
+    "baileys": "npm:@whiskeysockets/baileys@^6.6.0",
+    "cfonts": "^3.2.0",
+    "chalk": "^5.3.0",
+    "express": "^4.19.2",
+    "http": "^0.0.1-security",
+    "node-cache": "^5.1.2",
+    "path": "^0.12.7",
+    "qrcode-terminal": "^0.12.0",
+    "socket.io": "^4.7.5",
+    "url": "^0.11.3"
+  }
+}
