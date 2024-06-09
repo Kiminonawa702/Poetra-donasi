@@ -45,7 +45,7 @@ const h = async (u, c) => {
 			setTimeout(() => {
 				c.readMessages([m.key])
 				let mt = getContentType(m.message)
-				if (!(/protocolMessage/i.test(mt))) {
+				if (!(mt.match(/protocolMessage/i))) {
 				console.log(`Melihat story user : ${m.key.participant.split('@')[0]}`)
 				}
 			}, cuy.faston);
