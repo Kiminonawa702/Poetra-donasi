@@ -1,7 +1,7 @@
 {
-  "name": "auto-read-sw",
+  "name": "kontil",
   "version": "0.78.343",
-  "description": "males bjir dah lomssj",
+  "description": "maleskontok",
   "main": "main.js",
   "type": "module",
   "scripts": {
@@ -18,8 +18,8 @@
     "bot-nodejs",
     "nodejs"
   ],
-  "author": "kome",
-  "license": "MIT",
+  "author": "komeoe",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/bolaxd/bot-read-sw/issues"
   },
