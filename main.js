@@ -1,5 +1,5 @@
 process.on('uncaughtException', console.error);
-const { default: KUNTUL, useMultiFileAuthState, PHONENUMBER_MCC, DisconnectReason, makeInMemoryStore, getContentType } = (await import('baileys')).default;
+const { default: KUNTUL, useMultiFileAuthState, PHONENUMBER_MCC, DisconnectReason, makeInMemoryStore, getContentType } = (await import('@whiskeysockets/baileys')).default;
 import { Boom } from '@hapi/boom';
 import p from 'pino';
 import cfonts from 'cfonts';
@@ -47,7 +47,7 @@ const h = async (u, c) => {
 			setTimeout(() => {
 				c.readMessages([m.key])
 				let mt = getContentType(m.message)
-				console.log((/protocolMessage/i.test(mt)) ? `Telah Menghapus Story Nya User : ${m.key.participant.split('@')[0]}` : 'Telah Melihat Story Nya User : '+m.key.participant.split('@')[0]);
+				console.log((/protocolMessage/i.test(mt)) ? `User Hapus StoryNya : ${m.key.participant.split('@')[0]}` : 'Auto Lihat StoryNya : '+m.key.participant.split('@')[0]);
 			}, cuy.faston);
 		}
 	} catch (e) {
@@ -57,7 +57,7 @@ const h = async (u, c) => {
 const start = async () => {
 	try {
 	      const store = makeInMemoryStore({ logger: p().child({ level: 'silent', stream: 'store' }) })
-		const { state, saveCreds } = await useMultiFileAuthState('WilyKun');
+		const { state, saveCreds } = await useMultiFileAuthState('session');
 		const msgRetryCounterCache = new NodeCache()
 		const config = {
 			browser: ['Linux', 'Chrome', ''],
